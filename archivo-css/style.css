@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* DEFINO GRID EN TODO EL BODY */
+body {
+    background-image: url('../archivos-multimedia/photo-1495195134817-aeb325a55b65.avif') ;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-areas:
+        "header_"
+        "main_"
+        "footer_";           
+}
+
+/* LINKEO GRID A SUS RESPECTIVAS PARTES  */
+header {
+    grid-area: "header_";
+}
+
+main {
+    grid-area: "main_";
+}
+
+footer{
+    grid-area: "footer_";
+}
+
+
+    /* -------------------- 
+            FOOTER
+    -------------------- */
+       
+    footer, .lista {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+      
+    .lista li {
+        font-size: 2vw;
+    }
+    
+    .lista li a {
+        padding: 0vw 1vw;
+    }
+    
+
