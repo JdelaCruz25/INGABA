@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "producto": "Gastronomía I",
+        "precio": 14000,
+        "vacantes": 10,
+        "duracion": 8,
+        "horarios": "Lunes y miércoles de 20 a 22 hs.",
+        "imagen": "../archivos-multimedia/gastronomia-1.png"
+    },
+    {
+        "id": 2,
+        "producto": "Gastronomía II",
+        "precio": 16000,
+        "vacantes": 10,
+        "duracion": 16,
+        "horarios": "Lunes y miércoles de 18 a 20 hs.",
+        "imagen": "../archivos-multimedia/gastronomia-2.png"
+    },
+    {
+        "id": 3,
+        "producto": "Panadería",
+        "precio": 18000,
+        "vacantes": 10,
+        "duracion": 8,
+        "horarios":  "Miércoles y viernes de 14 a 16 hs.",
+        "imagen": "../archivos-multimedia/panaderia.png"
+    },
+    {
+        "id": 4,
+        "producto": "Pastelería I",
+        "precio": 20000,
+        "vacantes": 10,
+        "duracion": 16,
+        "horarios": "Martes y jueves de 20 a 22 hs.",
+        "imagen": "../archivos-multimedia/pasteleria-1.png"
+    },
+    {
+        "id": 5,
+        "producto": "Pastelería II",
+        "precio": 21000,
+        "vacantes": 10,
+        "duracion": 18,
+        "horarios": "Martes y jueves de 18 a 20 hs.",
+        "imagen": "../archivos-multimedia/pasteleria-2.png"
+    },
+    {
+        "id": 6,
+        "producto": "Cocina vegana",
+        "precio": 20000,
+        "vacantes": 10,
+        "duracion": 18,
+        "horarios": "Martes y viernes de 16 a 18 hs.",
+        "imagen": "../archivos-multimedia/vegano.png"
+    },
+    {
+        "id": 7,
+        "producto": "Cocineritos I",
+        "precio": 15000,
+        "vacantes": 10,
+        "duracion": 8,
+        "horarios":  "Lunes de 14 a 16 hs. y jueves de 16 a 18 hs.",
+        "imagen": "../archivos-multimedia/cocineritos-1.png"
+    },
+    {
+        "id": 8,
+        "producto": "Cocineritos II",
+        "precio": 17000,
+        "vacantes": 10,
+        "duracion": 10,
+        "horarios": "Martes y jueves de 14 a 16 hs.",
+        "imagen": "../archivos-multimedia/cocineritos-2.png"
+    },
+    {
+        "id": 9,
+        "producto": "Cocina para celíacos",
+        "precio": 20000,
+        "vacantes": 10,
+        "duracion": 16,
+        "horarios": "Lunes de 16 a 18 hs. y viernes de 18 a 20 hs.",
+        "imagen": "../archivos-multimedia/menu-ejecutivo.png"
+    },
+    {
+        "id": 10,
+        "producto": "Viandas para menú ejecutivo",
+        "precio": 16000,
+        "vacantes": 10,
+        "duracion": 8,
+        "horarios": "Miércoles de 16 a 18 hs. y viernes de 20 a 22 hs.",
+        "imagen": "../archivos-multimedia/celiacos.png"
+    }
+]
