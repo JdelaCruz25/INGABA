@@ -15,54 +15,109 @@
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/6e4fed1ca7.js" crossorigin="anonymous"></script>
 
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="../archivo-css/style.css">
 
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-" href="../index.html">
-              <img src="../archivos-multimedia/ingaba.png" alt="icon">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <header>  <!-- MENÚ Y LOGO -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../archivos-multimedia/logo.png" alt="igaba" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active lista-nav" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lista-nav" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle lista-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Cursos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./cursos.html">Niños</a></li>
-                            <li><a class="dropdown-item" href="./cursos.html">Adultos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                    
-                    <div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./sign-in.html">Ingresá</a>
+                            </a>
+                            <ul  class="dropdown-menu">
+                                <li><a class="dropdown-item lista-nav" href="./cursos.html">Niños</a></li>
+                                <li><a class="dropdown-item lista-nav" href="./cursos.html">Adultos</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./crear-cuenta.html">Registrate</a>
+                            <a class="nav-link lista-nav" href="./contacto.html">Contacto</a>
                         </li>
-                    </div>
 
-                </ul>
+                        <div class="div-ingreso">
+                            <li class="nav-item">
+                                <a class="nav-link lista-nav" href="./sign-in.html">Ingresá</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lista-nav" href="./crear-cuenta.html">Registrate</a>
+                            </li>
+                            
+                            <li>
+                                <a class="iconos lista-nav" id="botonAgregar" href="" target="_blank">
+                                    <i class="fa-solid fa-cart-shopping"></i> <!-- icono carrito -->
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Ingrese su búsqueda" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main-nosotros">      
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../archivos-multimedia/imagen-1.png" class="d-block w-100" alt="Emplatando">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../archivos-multimedia/imagen-2.png" class="d-block w-100" alt="Aprendiendo en la cocina">
+                </div>
+                <div class="carousel-item">
+                    <img src="../archivos-multimedia/imagen-3.png" class="d-block w-100" alt="Estudiantes">
+                </div>
+                <div class="carousel-item">
+                    <img src="../archivos-multimedia/imagen-4.png" class="d-block w-100" alt="Inauguración">
+                </div>
+            </div>
+            <button class="carousel-control-prev flecha" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next  flecha" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="nosotros-main">
+            <div class="t-nosotros">
+                <h1>¡Bienvenidos a INGABA!</h1>  
+            </div>
+            <div class="p-nosotros">
+                <p>Somos un instituto ficticio inspirados en IGA y en MEALPRO, con el fin de proporcionarles una excelente experiencia de compra a la hora de aprender a cocinar.</p>
+                <p>¡Te invitamos a recorrer nuestro sitio! Saludos, IGABA.</p>
             </div>
         </div>
-    </nav>
-
-    <h1>UPS! PÁGINA EN CONSTRUCCIÓN</h1>
-    <h2>Disculpe las molestias</h2>    
+    </main>
 
     <footer>
         <p id="derechos">©2022 - J. de la Cruz</p>
@@ -87,6 +142,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
     <script src="../archivo-js/index.js"></script>
+
 </body>
 </html>

@@ -15,54 +15,77 @@
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/6e4fed1ca7.js" crossorigin="anonymous"></script>
 
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="../archivo-css/style.css">
 
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-              <img src="../archivos-multimedia/ingaba.png" alt="icon">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <header>  <!-- MENÚ Y LOGO -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../archivos-multimedia/logo.png" alt="igaba" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active lista-nav" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lista-nav" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle lista-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Cursos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./cursos.html">Niños</a></li>
-                            <li><a class="dropdown-item" href="./cursos.html">Adultos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                    
-                    <div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./sign-in.html">Ingresá</a>
+                            </a>
+                            <ul  class="dropdown-menu">
+                                <li><a class="dropdown-item lista-nav" href="./cursos.html">Niños</a></li>
+                                <li><a class="dropdown-item lista-nav" href="./cursos.html">Adultos</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./crear-cuenta.html">Registrate</a>
+                            <a class="nav-link lista-nav" href="./contacto.html">Contacto</a>
                         </li>
-                    </div>
 
-                </ul>
+                        <div class="div-ingreso">
+                            <li class="nav-item">
+                                <a class="nav-link lista-nav" href="./sign-in.html">Ingresá</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lista-nav" href="./crear-cuenta.html">Registrate</a>
+                            </li>
+                            
+                            <li>
+                                <a class="iconos lista-nav" id="botonAgregar" href="" target="_blank">
+                                    <i class="fa-solid fa-cart-shopping"></i> <!-- icono carrito -->
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Ingrese su búsqueda" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <h1>UPS! PÁGINA EN CONSTRUCCIÓN</h1>
-    <h2>Disculpe las molestias</h2>
+    <main class="main-contacto">
+        <h1>UPS! PÁGINA EN CONSTRUCCIÓN</h1>
+        <h2>Disculpe las molestias</h2>
+    </main>
 
     <footer>
         <p id="derechos">©2022 - J. de la Cruz</p>

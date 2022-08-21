@@ -15,29 +15,36 @@
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/6e4fed1ca7.js" crossorigin="anonymous"></script>
 
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+ 
     <!-- CSS -->
     <link rel="stylesheet" href="../archivo-css/style.css">
 
 </head>
-<body>
+<body class="body-ingreso">
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <a class="navbar-brand" href="../index.html">
+    <nav class="navbar navbar-expand-lg nav-ingreso">
+        <a class="navbar-brand logo-ingreso" href="../index.html">
             <img src="../archivos-multimedia/ingaba.png" alt="icon">
         </a>
     </nav>
 
-    <form>
+    <h1><a href="../index.html">Volver al inicio</a></h1>
+
+    <form class="form-ingreso">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="password" class="form-control" id="exampleInputPassword1" required>
         </div>
-        <button class="btn btn-primary">Ingresar</button>
-      </form>
+        <button class="btn btn-primary boton-ingreso">Ingresar</button>
+    </form>
     
 
     <footer>

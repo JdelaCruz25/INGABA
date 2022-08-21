@@ -15,39 +15,46 @@
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/6e4fed1ca7.js" crossorigin="anonymous"></script>
 
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./archivo-css/style.css">
 
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg nav-inicio">
         <div class="container-fluid">
-            <li class="nav-item">
-                <a class="nav-link" href="./archivos-html/sign-in.html">Ingresá</a>
+            <li class="nav-item inicio-item">
+                <a class="nav-link lista-nav lista-inicio" href="./archivos-html/sign-in.html">Ingresá</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./archivos-html/crear-cuenta.html">Registrate</a>
+            <li class="nav-item inicio-item">
+                <a class="nav-link lista-nav lista-inicio" href="./archivos-html/crear-cuenta.html">Registrate</a>
             </li>
         </div>
     </nav>
     
-    <div class="grid text-center">
-        <div class="container-fluid g-col-6">
-            <a href="./index.html">
-                <img class="logo" src="./archivos-multimedia/ingaba.png" alt="logo">
-            </a>
+    <main class="main-inicio">
+        <div class="grid text-center">
+            <div class="container-fluid g-col-6">
+                <a href="./index.html">
+                    <img class="logo-index" src="./archivos-multimedia/ingaba.png" alt="logo">
+                </a>
+            </div>
+        
+            <div class="d-grid gap-2 col-6 mx-auto div-index">
+                <div class="t-index">
+                    <h1>INGABA</h1>
+                    <h2>Instituto Gastronómico de Buenos Aires</h2>
+                </div>
+                <a class="btn btn-primary boton-inicio" href="./archivos-html/nosotros.html">NOSOTROS</a>
+                <a class="btn btn-primary boton-inicio" href="./archivos-html/cursos.html">CURSOS</a>
+                <a class="btn btn-primary boton-inicio" href="./archivos-html/contacto.html">CONTACTO</a>
+            </div>
         </div>
-    
-        <div class="d-grid gap-2 col-6 mx-auto g-col-6">
-            <h1>INGABA</h1>
-            <h2>Instituto Gastronómico de Buenos Aires</h2>
-            <a class="btn btn-primary" href="./archivos-html/nosotros.html">NOSOTROS</a>
-            <a class="btn btn-primary" href="./archivos-html/cursos.html">CURSOS</a>
-            <a class="btn btn-primary" href="./archivos-html/contacto.html">CONTACTO</a>
-        </div>
-    </div>
-
+    </main>
 
 
     <footer>

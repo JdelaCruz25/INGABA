@@ -1,7 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Source Serif Pro', serif;
+    
+    font-family: 'Lora', serif;
     text-decoration: none;
     list-style-type: none;
 }
@@ -9,7 +10,7 @@
 
 /* DEFINO GRID EN TODO EL BODY */
 body {
-    background-image: url('../archivos-multimedia/photo-1495195134817-aeb325a55b65.avif') ;
+    background-image: url('../archivos-multimedia/fondo.avif') ;
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
@@ -36,23 +37,618 @@ footer{
 }
 
 
-    /* -------------------- 
-            FOOTER
-    -------------------- */
+
+/* -------------------- 
+        HEADER
+-------------------- */
+
+.navbar {
+    background: #FFFFD2;
+}
+
+.lista-nav {
+    padding-left: 3vw;
+    color: #64732F;
+    font-size: 5vw;
+}
+
+.lista-nav:focus, .lista-inicio:focus{
+    color: #34401A;
+    background-color: #b6c452;
+}
+
+.dropdown-menu {
+    border: none;
+    background-color: #FFFFD2;
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus {
+    background-color: #b6c452;
+    color: #000;
+}
+
+
+
+/* -------------------- 
+        FOOTER
+-------------------- */
        
-    footer, .lista {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+ footer, .lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b6c452;
+}
       
-    .lista li {
-        font-size: 2vw;
+.lista li {
+    font-size: 2vw;
+}
+
+.lista li:hover {
+    background-color: #FFFFD2;
+}
+    
+.lista li a {
+    padding: 0vw 1vw;
+    color: #34401A;
+}
+
+
+
+
+/* --------------------
+    MOBILE FIRST
+-------------------- */
+
+/* HEADER */
+
+.logo {
+    width: 20vw;
+}
+
+.lista-nav {
+    padding-left: 0vw;
+    color: #64732F;
+}
+
+.dropdown-toggle.show {
+    margin-bottom: -3vw;
+}
+
+.dropdown-item {
+    padding-top: 1vw;
+}
+
+.fa-cart-shopping {
+    padding-top: 5vw;
+}
+
+.d-flex {
+    margin: 4vw;
+}
+
+
+/* INICIO */
+
+.main-inicio {
+    margin: -8vw 0 -4vw 0;
+}
+
+.logo-index {
+    width: 70vw;
+}
+
+.div-index {
+    width: 100vw;
+    margin: 3vw 0;
+}
+
+.t-index {
+    background-color: #fff;
+    padding: 3vw 0;
+    margin-bottom: 5vw;
+}
+
+.t-index h1 {
+    font-size: 10vw;
+}
+
+.t-index h2 {
+    font-size: 4.8vw;
+}
+
+.boton-inicio {
+    margin: 0 10vw;
+    border-color: #34401A;
+    background-color: #CAD959;
+    color: #000;
+    border-radius: 5vw;
+    font-size: 4vw;
+}
+
+.boton-inicio:hover {
+    border-color: #CAD959;
+    background-color: #64732F;
+    color: #fffA;
+}
+
+.lista-inicio {
+    padding: 2vw 4vw;
+}
+
+
+/* SIGN-IN */
+
+.nav-ingreso {
+    background-color: #b6c452;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-ingreso img{
+    width: 60vw;
+    margin: -3vw;
+}
+
+.body-ingreso h1 {
+    margin: -2vw 4vw;
+    font-size: 5vw;
+    
+}
+
+.body-ingreso h1 a {
+    color: #34401A;
+    text-decoration: none;
+}
+
+.form-ingreso {
+    width: 85vw;
+    text-align: center;
+    justify-self: center;
+}
+
+.form-ingreso div label {
+    font-size: 6vw;
+}
+
+.boton-ingreso {
+    background-color: #CAD959;
+    border-color: #64732F;
+    border-radius: 2vw;
+    color: #111;
+    font-size: 5vw;
+    margin-top: 5vw;
+    width: 40vw;
+}
+
+.boton-ingreso:hover {
+    background-color: #64732F;
+    color: #FFFFD2;
+    border-color: #64732F;
+}
+
+
+/* CREAR CUENTA */
+
+.main-cuenta {
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+.main-cuenta div h1 {
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: 10vw;
+}
+
+#crearUsuario{
+    text-align: center;
+}
+
+#crearUsuario div label{
+    font-size: 6vw;
+    margin-top: 3vw;
+}
+
+
+
+/* NOSOTROS */
+
+#carouselExampleInterval {
+    margin-top: -13vw;
+}
+
+.flecha {
+    width: 6vw;
+}
+
+#nosotros-main {
+
+    justify-self: center;
+    
+}
+
+.t-nosotros {
+    justify-self: center;
+
+    padding: 5vw 5vw;
+    background-image: linear-gradient( #FFFFD2,#CAD959) ;
+    text-align: center;
+}
+
+.t-nosotros h1 {
+    font-size: 8.2vw;
+}
+
+
+.p-nosotros {
+    padding: 10vw 5vw 7vw 5vw ;
+    background-color: #ffffff;
+}
+
+
+/* CONTACTO */
+
+.main-contacto {
+    margin: 36vw 0;
+    padding: 10vw 0;
+    background-color: #fff;
+    text-align: center;}
+
+.main-contacto h1{
+    font-size: 6vw;
+}
+
+.main-contacto h2 {
+    font-size: 4.5vw;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 4vw 3vw 0vw 3vw;
+}
+
+.iconos{
+    font-size: 6vw;
+    margin-left: 1vw;
+}
+
+
+
+/* -------------------- 
+    APTO TABLETS 
+-------------------- */
+@media screen and (min-width: 768px) {
+    
+    /* HEADER */
+
+    .logo {
+        width: 15vw;
+    }
+
+    .lista-nav {
+        font-size: 2.5vw;
+    }
+
+    .dropdown-toggle.show {
+        margin-bottom: -2vw;
+    }
+
+    .dropdown-item {
+        padding-left: 3vw;
+    }
+
+    .fa-cart-shopping {
+        padding-top: 4vw;
+    }
+
+    .d-flex {
+        margin: 3vw;
+    }
+
+
+    /* INICIO */
+
+    .main-inicio {
+        margin: -4vw 0 -2vw 0;
+    }
+
+    .boton-inicio {
+        margin: 1vw 10vw;
+    }
+
+
+    /* SIGN-IN*/
+
+    .logo-ingreso img{
+        width: 30vw;
+        margin: -1vw;
+    }
+
+    .body-ingreso h1 {
+        margin: -2vw 4vw;
+        font-size: 3vw;
+        
+    }
+
+    .form-ingreso {
+        width: 85vw;
+        text-align: center;
+        justify-self: center;
     }
     
-    .lista li a {
-        padding: 0vw 1vw;
+    .form-ingreso div label {
+        font-size: 3.5vw;
+    }
+    
+    .boton-ingreso {
+        font-size: 3vw;
+        margin-top: 2vw;
+        width: 40vw;
+    }
+
+    /* CREAR CUENTA */
+
+    .main-cuenta {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .main-cuenta div h1 {
+        font-size: 6vw;
+        margin-bottom: 10vw;
+    }
+
+    #crearUsuario div label{
+        font-size: 3.5vw;
+        margin-top: 2.5vw;
+    }
+
+    .boton-registro {
+        margin: 6vw 0;
+    }
+
+    /* NOSOTROS */
+
+    #carouselExampleInterval {
+        margin-top: -5.2vw;
+    }
+
+    .t-nosotros h1 {
+        font-size: 7vw;
+    }
+
+    .p-nosotros {
+        padding: 7vw 4vw;
+        background-color: #ffffff;
+        font-size: 3vw;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 2vw 3vw 0vw 3vw;
+    }
+
+    .iconos{
+        font-size: 3.5vw;
+        margin-left: 1vw;
+    }
+        
+    .lista li {
+        font-size: 1vw;
+    }
+    
+}
+
+
+
+
+/* -------------------- 
+    APTO ORDENADORES 
+-------------------- */ 
+@media screen and (min-width:1024px){
+
+    /* HEADER */
+    
+    .logo {
+        width: 5vw;
+    }
+    .container-fluid {
+        margin: 0;
+    }
+
+    .lista-nav {
+        text-align: center;
+        font-size: 1.4vw;
+        margin-left: 1.5vw;
+        padding: 2vw;
+    }
+
+    .lista-nav:hover {
+        color: #34401A;
+        background-color: #b6c452;
+    }
+
+    .dropdown-toggle.show {
+        margin-bottom: 0vw;
+    }
+
+    .dropdown-item {
+        padding: 1vw 4vw 1vw 3vw;
+    }
+
+    .fa-cart-shopping {
+        padding-top: 0vw;
+        justify-self: end;
+        line-height: 6vw;
+    }
+
+    .d-flex {
+        margin: 0vw;
+    }
+
+    .div-ingreso {
+        display: flex;
+        flex-direction: row;
+        margin-left: 14vw;
+    }
+
+
+    /* INICIO */
+    
+    .lista-inicio {
+        margin: -0.5vw -1.5vw -0.5vw -1vw;
+        padding: 0.5vw 2vw;
+    }
+
+    .logo-index {
+        width: 18vw;
+    }
+
+    .main-inicio {
+        margin: -2vw 0 -4vw 0;
+    }
+    
+    .t-index {
+        padding: 0;
+        margin: -3vw 0 2vw 0;
+        background-color: #fff1;
+    }
+    
+    .t-index h1 {
+        font-size: 4vw;
+    }
+    
+    .t-index h2 {
+        font-size: 2vw;
+        margin-bottom: -0.5vw;
+    }
+    
+    .boton-inicio {
+        margin: 0 35vw;
+        font-size: 1.5vw;
+    }
+
+
+    /* SIGN-IN */   
+
+    .logo-ingreso img{
+        width: 15vw;
+        margin: -1vw;
+    }
+    
+    .body-ingreso h1 {
+        margin: -2vw 1vw;
+        font-size: 1.5vw;      
+    }
+    
+    .form-ingreso {
+        margin-top: -2.8vw;
+        width: 50vw;
+    }
+    
+    .form-ingreso div label {
+        font-size: 2vw;
+    }
+
+    .form-ingreso div input {
+        height: 3.5vw;
+        font-size: 1.5vw;
+    }
+    
+    .boton-ingreso {
+        font-size: 1.5vw;
+        width: 30vw;
+        margin: 2.5vw 0 2vw 0;
+    }
+
+
+    /* CREAR CUENTA */
+
+    .main-cuenta div h1 {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    #crearUsuario div label{
+        font-size: 2vw;
+        margin-top: 2vw;
+    }
+
+    #crearUsuario div input {
+        width: 50vw;
+        margin-left: 15vw;
+    }
+
+    .boton-registro {
+        margin: 5vw 0 3vw 0;
     }
     
 
+    /* NOSOTROS */
+
+    #carouselExampleInterval {
+        margin-top: -2.6vw;
+    }
+
+    .t-nosotros h1 {
+        font-size: 4vw;
+        margin-top: -2.5vw;
+        height: 1vw;
+    }
+
+    .p-nosotros {
+        padding: 3vw 2vw 0 9vw;
+        background-color: #fff0;
+        font-size: 2vw;
+    }
+ 
+
+    /* CONTACTO */
+
+    .main-contacto {
+        margin: 10.5vw 0;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .main-contacto h1{
+        font-size: 5vw;
+    }
+
+    .main-contacto h2 {
+        font-size: 3vw;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 1vw 1vw 0vw 1.5vw;
+        height: 5.1vw;
+    }
+
+    footer p {
+        font-size: 1.3vw;
+    }
+
+    .iconos{
+        font-size: 2vw;
+        margin: 1vw;
+    }
+
+    .iconos i {
+        text-align: center;
+    }
+        
+    .lista li {
+        padding: 1vw 0;
+    }
+
+
+}
