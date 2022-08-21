@@ -31,13 +31,12 @@ const divCursos=document.getElementById("divCursos")
 
 cursos.forEach(c=> {                 /* id="curso${producto.id}"> */
     divCursos.innerHTML += `
-    <div class="card border-primary mb-3" style="max-width: 20rem; margin:4px"> 
+    <div class="card card-curso"> 
         <img src=${c.imagen} class="card-img-top" alt="img">
-        <p>${c.producto}</p>
-        <p>$${c.precio}.-</p>
-        <p>Vacantes: ${c.vacantes}</p>
-        <p>Duración: ${c.duracion}</p>
-        <a class="btn btn-primary" id="botonAgregar">Añadir al carrito</a>
+        <p class="t-card">${c.producto}</p>
+        <p class="p-card">$${c.precio}.-</p>
+        <p class"d-card">Duración: ${c.duracion} hs.</p>
+        <a class="btn btn-primary btn-card" id="botonAgregar">Añadir al carrito</a>
     </div> 
     `
 })

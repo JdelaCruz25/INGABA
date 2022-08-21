@@ -253,6 +253,65 @@ footer{
 }
 
 
+/* CURSOS */
+.main-cursos, .cursos {
+    display: flex;
+    flex-direction: row;
+}
+
+.cursos {
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+
+.card-curso {
+    text-align: center;
+    width: 17vw;
+    border-color: #64732F;
+    line-height: 1vw;
+    background-color: #fff;
+}
+
+.t-card {
+    width: 100% ;
+    background-color: #FFFFD2;
+    font-size: 2vw;
+    padding: 2vw 0;
+    line-height: 2vw;
+}
+
+
+.btn-orden, .btn-card{
+    background-color: #CAD959;
+    color: #34401A;
+    border-color: #34401A;
+    font-size: 1.3vw;
+}
+
+.btn-orden {
+    padding: 0.5vw;
+    margin: 1.5vw 4vw 0vw 3vw;
+    width: 14vw;
+}
+
+.btn-orden:hover, .btn-card:hover{
+    background-color: #FFFFD2;
+    color: #34401A;
+}
+
+.filtro {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro h1 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+
+
 
 /* NOSOTROS */
 
