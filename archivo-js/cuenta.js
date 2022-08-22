@@ -35,3 +35,46 @@ formulario.addEventListener('submit',(event) =>{
     formulario.reset()
 
 })
+
+
+
+/* INICIO SESIÓN */
+
+form.addEventListener('boton-ingreso',(e) =>{
+    e.preventDefault();
+
+    let email = document.getElementById('emailUsuarioEntrar').value 
+    let pass = document.getElementById('passUsuarioEntrar').value
+
+    let usuario = localStorage.getItem(email)
+    let data = JSON.parse(usuario)
+
+    if (usuario == null) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Usuario no encontrado.'
+          })
+    }
+
+    else if (email == data.email && pass == data.pass){
+        Swal.fire({
+            position: 'top-end',
+            icon: 'Acceso correcto',
+            title: 'Bienvenido.',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }
+
+    else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Contraseña incorrecta'
+          })
+
+    }
+
+    form.reset()
+})

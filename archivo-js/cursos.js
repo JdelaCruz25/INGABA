@@ -32,7 +32,75 @@ const divCursos=document.getElementById("divCursos")
 cursos.forEach(c=> {                 /* id="curso${producto.id}"> */
     divCursos.innerHTML += `
     <div class="card card-curso"> 
-        <img src=${c.imagen} class="card-img-top" alt="img">
+        <img src=${c.imagen} class="card-img-top i-card" alt="img">
+        <p class="t-card">${c.producto}</p>
+        <p class="p-card">$${c.precio}.-</p>
+        <p class"d-card">Duración: ${c.duracion} hs.</p>
+        <a class="btn btn-primary btn-card" id="botonAgregar">Añadir al carrito</a>
+    </div> 
+    `
+})
+
+/* ORDENAR CURSOS */
+const mayor=document.getElementsByClassName('mayor')
+
+mayor.forEach(btnMay => {
+    btnMay.addEventListener('click', ordenarMay)
+})
+
+function ordenarMay(){
+    
+    cursos.sort((a,b) =>{
+        if (a.precio > b.precio) {
+            return -1;
+        }
+    
+        if (a.precio < b.precio) {
+            return 1;
+        }
+    
+        return 0
+    });
+}
+
+cursos.forEach(c=> {                 
+    divCursos.innerHTML += `
+    <div class="card card-curso"> 
+        <img src=${c.imagen} class="card-img-top i-card" alt="img">
+        <p class="t-card">${c.producto}</p>
+        <p class="p-card">$${c.precio}.-</p>
+        <p class"d-card">Duración: ${c.duracion} hs.</p>
+        <a class="btn btn-primary btn-card" id="botonAgregar">Añadir al carrito</a>
+    </div> 
+    `
+})
+
+
+const menor=document.getElementsByClassName('menor')
+
+mayor.forEach(btnMen => {
+    btnMen.addEventListener('click', ordenarMen)
+})
+
+function ordenarMen(){
+    
+    cursos.sort((a,b) =>{
+        if (a.precio < b.precio) {
+            return -1;
+        }
+    
+        if (a.precio > b.precio) {
+            return 1;
+        }
+    
+        return 0
+    });
+}
+
+cursos.forEach(c=> {                
+    divCursos.innerHTML += `
+    <div class="card card-curso"> 
+        <img src=${c.imagen} class="card-img-top i-card" alt="img">
         <p class="t-card">${c.producto}</p>
         <p class="p-card">$${c.precio}.-</p>
         <p class"d-card">Duración: ${c.duracion} hs.</p>
@@ -43,9 +111,8 @@ cursos.forEach(c=> {                 /* id="curso${producto.id}"> */
 
 
 
-/* AGREGAR CARRITO */
 
-const carrito = []
+/* AGREGAR CARRITO */
 
 if (localStorage.getItem('storageCarrito')) {
     car=JSON.parse(localStorage.getItem('storageCarrito'))
@@ -56,15 +123,81 @@ else {
 
 const botonAgregar=document.getElementById('botonAgregar')
 const divCarrito=document.getElementById('divCarrito')
+const carrito = []
 
-botonAgregar.addEventListener('click', () =>{
+botonAgregar.forEach(btnA => {
+    btnA.addEventListener('click', addCarrito)
 
-    let carritoStorage = JSON.parse(localStorage.getItem('storageCarrito'))
+    Toastify({
+        text: "Curso agregado al Carrito",
+        duration: 3000
+        }).showToast();
+})
+
+    function addCarrito(e){
+        const button = e.target
+        const item = button.closest('.card-curso')
+        const itemTitulo = item.querySelector ('.t-card').textContent;
+        const itemPrecio = item.querySelector ('.p-card').textContent;
+        const itemImg = item.querySelector ('.i-card').src;
+
+        const nuevoItem = {
+            titulo: itemTitulo,
+            precio: itemPrecio,
+            img: itemImg,
+            cantidad: 1
+        }
+
+        addItemCarrito(nuevoItem)
+    }
+
+    function addItemCarrito(nuevoItem){
+
+        const inputElemento = divCarrito.getElementsByClassName('inputElemento')
+
+        for(let i=0; i< carrito.length; i++){
+            if (carrito[i].titulo,trim()===newItem.titulo.trim()){
+                carrito[i].cantidad ++;
+                
+                const inputValor = inputElemento[i].value
+                inputValor.value++
+
+                return null;
+            }
+        }
+
+        carrito.push(nuevoItem)
+
+        mostrarCarrito ()
+    }
+
+    function mostrarCarrito () {
+        divCarrito.innerHTML += ``
+        carrito.map (item => {
+            const cardCurso = document.createElement ('cardCurso')
+
+        })
+    }
+
+
+    function precioTotal(){
+        let total= 0;
+        const itemCarrTot = document.querySelector('.itemCarrTotal')
+
+        carrito.forEach((item) => {
+
+        })
+
+    }
+
+
+
+   /*  let carritoStorage = JSON.parse(localStorage.getItem('storageCarrito'))
     divCarrito.innerHTML=""
     
     carritoStorage.forEach((cc) =>{
         divCarrito.innerHTML += `
-        <div class="card border-primary mb-3" style="max-width: 20rem; margin:4px"> 
+        <div class="card card-curso"> 
             <img src=${cc.imagen} class="card-img-top" alt="img">
             <p>${cc.producto}</p>
             <p>$${cc.precio}.-</p>
@@ -74,7 +207,7 @@ botonAgregar.addEventListener('click', () =>{
         `
     })
 })
-
+ */
 
 
 /* MOSTRAR CARRITO */

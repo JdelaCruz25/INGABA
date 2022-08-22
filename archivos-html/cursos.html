@@ -23,6 +23,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../archivo-css/style.css">
 
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
 </head>
 <body>
     <header>  <!-- MENÚ Y LOGO -->
@@ -44,14 +47,8 @@
                         <li class="nav-item">
                             <a class="nav-link lista-nav" href="./nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle lista-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Cursos
-                            </a>
-                            <ul  class="dropdown-menu">
-                                <li><a class="dropdown-item lista-nav" href="./cursos.html">Niños</a></li>
-                                <li><a class="dropdown-item lista-nav" href="./cursos.html">Adultos</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link lista-nav" href="./cursos.html">Cursos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link lista-nav" href="./contacto.html">Contacto</a>
@@ -86,8 +83,8 @@
 <main class="main-cursos">
     <div class="filtro">
         <h1>Ordenar precios:</h1>
-        <button type="button" class="btn btn-secondary btn-orden">Menor a mayor</button>
-        <button type="button" class="btn btn-secondary btn-orden">Mayor a menor</button>
+        <button type="button" class="btn btn-secondary btn-orden menor">Menor a mayor</button>
+        <button type="button" class="btn btn-secondary btn-orden mayor">Mayor a menor</button>
     </div>
 
     <div id="divCursos" class="cursos">
@@ -118,6 +115,7 @@
          </ul>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="../archivo-js/cursos.js"></script>
 </body>
